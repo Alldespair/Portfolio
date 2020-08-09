@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Course</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div id="current-weather">
+      <header>
+        <ul class="locationDate-Info">
+          <li id="current-location">Your location</li>
+          <li id="current-date"></li>
+        </ul>
+          <div class="search">
+            <input class="words" type="text" placeholder="Search city">
+            <button class="geoPositBtn" id="get-weather" onclick="getCurrentGeoPosition()"><img src="icons/locationIcon.svg"></button>
+            <button id="get-city" onclick="getVoice()"><img src="icons/voiceIcon.svg"></button>
+          </div>
+      </header>
+      <section>
+        <p id="current-temperature"></p>
+        <div id="current-weather-icon"></div>
+      </section>
+      <div id="weather-summary"></div>
+      <section class="weather-details">
+        <div id="current-humidity"></div>
+        <div id="current-pressure"></div>
+        <div id="current-wind-info"></div>
+      </section>
+    </div>
+  </div>
+<script src="js/script.js"></script>
+<script src="js/script2.js"></script>
+</body>
+</html>

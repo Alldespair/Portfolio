@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #7ea8d3;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  cursor: default;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+}
+
+#current-weather {
+  min-width: 50%;
+  padding: 2em;
+  border-radius: 3em;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.locationDate-Info {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: #eceff1;
+  background-color: #7ea8d3;
+  padding: 0.7em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  min-width: 21.5em;
+  width: fit-content;
+}
+
+#current-location {
+  font-size: 3em;
+}
+
+#current-date {
+  font-size: 2em;
+}
+
+.search {
+  width: 21em;
+  border: 0.1em solid #7ea8d3;
+  border-radius: 1em;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.1em 0.8em 0.1em 0.8em;
+  height: 2em;
+}
+ 
+ .words {
+  color: #454545;
+  outline: none;
+  font-size: 1em;
+  border: none;
+  flex-grow: 1;
+}
+
+.geoPositBtn {
+  border: none;
+  outline: none;
+  background-color: #ffffff00;
+  border-right: solid 0.1em #7ea8d3;
+  padding: 0;
+}
+
+#get-city {
+  border: none;
+  outline: none;
+  background-color: #ffffff00;
+  padding: 0;
+}
+
+section {
+  display: flex;
+}
+
+#current-temperature {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8em;
+  margin: 0;
+  color: #eceff1;
+  display: flex;
+  align-items: center;}
+
+#weather-summary {
+  font-size: 2em;
+  color: #eceff1;
+  margin-bottom: 1em;
+}
+
+.weather-details {
+  font-family: serif;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.25em;
+  color: #eceff1;
+  line-height: 1em;
+  margin-bottom: 0.5em;
+}
