@@ -1,0 +1,60 @@
+#body {
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 95vh;
+  align-items: center;
+  margin: auto;
+}
+
+blockquote {
+  width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  margin-bottom: 10em;
+}
+
+#quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 36px;
+  font-style: italic;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 1px, rgba(181, 181, 181, 0.4);
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: solid;
+  border-bottom-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+
+#cite {
+  font-size: 24px;
+  color: white;
+}
+
+#showQuotes {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: rgba(11, 11, 11, 0.85);
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  width: 15em;
+  border-radius: 1em;
+  border: solid 1px rgba(0, 0, 0, 0.4);
+  outline: none;
+  position: absolute;
+  bottom: 6em;
+}
+
+#showQuotes:hover {
+  background-color: rgba(226, 205, 205, 0.808);
+  transition-duration: 0.5s;
+}
