@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drum Machine</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="drumLoop">
+      <div class="controlPanel">
+        <input class="buttonPlayPause" type="button" value="Play">
+        <input class="buttonStop" type="button" value="Stop">
+        <input class="buttonClear"type="button" value="Clear">
+        <input class="buttonPlusBPM" type="button" value="+">
+        <input class="currentBPM"type="number" name="quantity" value="80" min="40" max="200" readonly>
+        <input class="buttonMinusBPM" type="button" value="-">
+      </div>
+      <div class="row" id="row-0">
+        <div data-key="69" class="key">
+          <kbd>E</kbd>
+          <span class="sound">Crash</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="0" data-col="0"></div>
+          <div class="column" data-row="0" data-col="1"></div>
+          <div class="column" data-row="0" data-col="2"></div>
+          <div class="column" data-row="0" data-col="3"></div>
+          <div class="column" data-row="0" data-col="4"></div>
+          <div class="column" data-row="0" data-col="5"></div>
+          <div class="column" data-row="0" data-col="6"></div>
+          <div class="column" data-row="0" data-col="7"></div>
+          <div class="column" data-row="0" data-col="8"></div>
+          <div class="column" data-row="0" data-col="9"></div>
+          <div class="column" data-row="0" data-col="10"></div>
+          <div class="column" data-row="0" data-col="11"></div>
+          <div class="column" data-row="0" data-col="12"></div>
+          <div class="column" data-row="0" data-col="13"></div>
+          <div class="column" data-row="0" data-col="14"></div>
+          <div class="column" data-row="0" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-1">
+        <div data-key="85" class="key">
+          <kbd>U</kbd>
+          <span class="sound">Ridecup</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="1" data-col="0"></div>
+          <div class="column" data-row="1" data-col="1"></div>
+          <div class="column" data-row="1" data-col="2"></div>
+          <div class="column" data-row="1" data-col="3"></div>
+          <div class="column" data-row="1" data-col="4"></div>
+          <div class="column" data-row="1" data-col="5"></div>
+          <div class="column" data-row="1" data-col="6"></div>
+          <div class="column" data-row="1" data-col="7"></div>
+          <div class="column" data-row="1" data-col="8"></div>
+          <div class="column" data-row="1" data-col="9"></div>
+          <div class="column" data-row="1" data-col="10"></div>
+          <div class="column" data-row="1" data-col="11"></div>
+          <div class="column" data-row="1" data-col="12"></div>
+          <div class="column" data-row="1" data-col="13"></div>
+          <div class="column" data-row="1" data-col="14"></div>
+          <div class="column" data-row="1" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-2">
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+          <span class="sound">Tom Hi</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="2" data-col="0"></div>
+          <div class="column" data-row="2" data-col="1"></div>
+          <div class="column" data-row="2" data-col="2"></div>
+          <div class="column" data-row="2" data-col="3"></div>
+          <div class="column" data-row="2" data-col="4"></div>
+          <div class="column" data-row="2" data-col="5"></div>
+          <div class="column" data-row="2" data-col="6"></div>
+          <div class="column" data-row="2" data-col="7"></div>
+          <div class="column" data-row="2" data-col="8"></div>
+          <div class="column" data-row="2" data-col="9"></div>
+          <div class="column" data-row="2" data-col="10"></div>
+          <div class="column" data-row="2" data-col="11"></div>
+          <div class="column" data-row="2" data-col="12"></div>
+          <div class="column" data-row="2" data-col="13"></div>
+          <div class="column" data-row="2" data-col="14"></div>
+          <div class="column" data-row="2" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-3">
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+          <span class="sound">Tom Low</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="3" data-col="0"></div>
+          <div class="column" data-row="3" data-col="1"></div>
+          <div class="column" data-row="3" data-col="2"></div>
+          <div class="column" data-row="3" data-col="3"></div>
+          <div class="column" data-row="3" data-col="4"></div>
+          <div class="column" data-row="3" data-col="5"></div>
+          <div class="column" data-row="3" data-col="6"></div>
+          <div class="column" data-row="3" data-col="7"></div>
+          <div class="column" data-row="3" data-col="8"></div>
+          <div class="column" data-row="3" data-col="9"></div>
+          <div class="column" data-row="3" data-col="10"></div>
+          <div class="column" data-row="3" data-col="11"></div>
+          <div class="column" data-row="3" data-col="12"></div>
+          <div class="column" data-row="3" data-col="13"></div>
+          <div class="column" data-row="3" data-col="14"></div>
+          <div class="column" data-row="3" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-4">
+        <div data-key="90" class="key">
+          <kbd>Z</kbd>
+          <span class="sound">HH Open</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="4" data-col="0"></div>
+          <div class="column" data-row="4" data-col="1"></div>
+          <div class="column" data-row="4" data-col="2"></div>
+          <div class="column" data-row="4" data-col="3"></div>
+          <div class="column" data-row="4" data-col="4"></div>
+          <div class="column" data-row="4" data-col="5"></div>
+          <div class="column" data-row="4" data-col="6"></div>
+          <div class="column" data-row="4" data-col="7"></div>
+          <div class="column" data-row="4" data-col="8"></div>
+          <div class="column" data-row="4" data-col="9"></div>
+          <div class="column" data-row="4" data-col="10"></div>
+          <div class="column" data-row="4" data-col="11"></div>
+          <div class="column" data-row="4" data-col="12"></div>
+          <div class="column" data-row="4" data-col="13"></div>
+          <div class="column" data-row="4" data-col="14"></div>
+          <div class="column" data-row="4" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-5">
+        <div data-key="88" class="key">
+          <kbd>X</kbd>
+          <span class="sound">HH Close</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="5" data-col="0"></div>
+          <div class="column" data-row="5" data-col="1"></div>
+          <div class="column" data-row="5" data-col="2"></div>
+          <div class="column" data-row="5" data-col="3"></div>
+          <div class="column" data-row="5" data-col="4"></div>
+          <div class="column" data-row="5" data-col="5"></div>
+          <div class="column" data-row="5" data-col="6"></div>
+          <div class="column" data-row="5" data-col="7"></div>
+          <div class="column" data-row="5" data-col="8"></div>
+          <div class="column" data-row="5" data-col="9"></div>
+          <div class="column" data-row="5" data-col="10"></div>
+          <div class="column" data-row="5" data-col="11"></div>
+          <div class="column" data-row="5" data-col="12"></div>
+          <div class="column" data-row="5" data-col="13"></div>
+          <div class="column" data-row="5" data-col="14"></div>
+          <div class="column" data-row="5" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-6">
+        <div data-key="67" class="key">
+          <kbd>C</kbd>
+          <span class="sound">Snare</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="6" data-col="0"></div>
+          <div class="column" data-row="6" data-col="1"></div>
+          <div class="column" data-row="6" data-col="2"></div>
+          <div class="column" data-row="6" data-col="3"></div>
+          <div class="column" data-row="6" data-col="4"></div>
+          <div class="column" data-row="6" data-col="5"></div>
+          <div class="column" data-row="6" data-col="6"></div>
+          <div class="column" data-row="6" data-col="7"></div>
+          <div class="column" data-row="6" data-col="8"></div>
+          <div class="column" data-row="6" data-col="9"></div>
+          <div class="column" data-row="6" data-col="10"></div>
+          <div class="column" data-row="6" data-col="11"></div>
+          <div class="column" data-row="6" data-col="12"></div>
+          <div class="column" data-row="6" data-col="13"></div>
+          <div class="column" data-row="6" data-col="14"></div>
+          <div class="column" data-row="6" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-7">
+        <div data-key="86" class="key">
+          <kbd>V</kbd>
+          <span class="sound">Clap</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="7" data-col="0"></div>
+          <div class="column" data-row="7" data-col="1"></div>
+          <div class="column" data-row="7" data-col="2"></div>
+          <div class="column" data-row="7" data-col="3"></div>
+          <div class="column" data-row="7" data-col="4"></div>
+          <div class="column" data-row="7" data-col="5"></div>
+          <div class="column" data-row="7" data-col="6"></div>
+          <div class="column" data-row="7" data-col="7"></div>
+          <div class="column" data-row="7" data-col="8"></div>
+          <div class="column" data-row="7" data-col="9"></div>
+          <div class="column" data-row="7" data-col="10"></div>
+          <div class="column" data-row="7" data-col="11"></div>
+          <div class="column" data-row="7" data-col="12"></div>
+          <div class="column" data-row="7" data-col="13"></div>
+          <div class="column" data-row="7" data-col="14"></div>
+          <div class="column" data-row="7" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-8">
+        <div data-key="66" class="key">
+          <kbd>B</kbd>
+          <span class="sound">Kick</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="8" data-col="0"></div>
+          <div class="column" data-row="8" data-col="1"></div>
+          <div class="column" data-row="8" data-col="2"></div>
+          <div class="column" data-row="8" data-col="3"></div>
+          <div class="column" data-row="8" data-col="4"></div>
+          <div class="column" data-row="8" data-col="5"></div>
+          <div class="column" data-row="8" data-col="6"></div>
+          <div class="column" data-row="8" data-col="7"></div>
+          <div class="column" data-row="8" data-col="8"></div>
+          <div class="column" data-row="8" data-col="9"></div>
+          <div class="column" data-row="8" data-col="10"></div>
+          <div class="column" data-row="8" data-col="11"></div>
+          <div class="column" data-row="8" data-col="12"></div>
+          <div class="column" data-row="8" data-col="13"></div>
+          <div class="column" data-row="8" data-col="14"></div>
+          <div class="column" data-row="8" data-col="15"></div>
+        </div>
+      </div>
+  
+      <div class="row" id="row-9">
+        <div data-key="78" class="key">
+          <kbd>N</kbd>
+          <span class="sound">RimShot</span>
+        </div>
+        <div class="column-container">
+          <div class="column" data-row="9" data-col="0"></div>
+          <div class="column" data-row="9" data-col="1"></div>
+          <div class="column" data-row="9" data-col="2"></div>
+          <div class="column" data-row="9" data-col="3"></div>
+          <div class="column" data-row="9" data-col="4"></div>
+          <div class="column" data-row="9" data-col="5"></div>
+          <div class="column" data-row="9" data-col="6"></div>
+          <div class="column" data-row="9" data-col="7"></div>
+          <div class="column" data-row="9" data-col="8"></div>
+          <div class="column" data-row="9" data-col="9"></div>
+          <div class="column" data-row="9" data-col="10"></div>
+          <div class="column" data-row="9" data-col="11"></div>
+          <div class="column" data-row="9" data-col="12"></div>
+          <div class="column" data-row="9" data-col="13"></div>
+          <div class="column" data-row="9" data-col="14"></div>
+          <div class="column" data-row="9" data-col="15"></div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+  <audio data-key="69" src="drums/CRASH.wav"></audio>
+  <audio data-key="85" src="drums/RIDECUP.wav"></audio>
+  <audio data-key="68" src="drums/TOMHI.wav"></audio>
+  <audio data-key="70" src="drums/TOMLOW.wav"></audio>
+  <audio data-key="86" src="drums/CLAP.wav"></audio>
+  <audio data-key="90" src="drums/HHOPEN.wav"></audio>
+  <audio data-key="88" src="drums/HHCLOSE.wav"></audio>
+  <audio data-key="67" src="drums/SNARE.wav"></audio>
+  <audio data-key="66" src="drums/KICK.wav"></audio>
+  <audio data-key="78" src="drums/RIMSHOT.wav"></audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
