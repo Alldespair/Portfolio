@@ -1,0 +1,123 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 25vw;
+  top: 50%;
+  left: 37.5vw;
+  transform: translateY(-50%);
+  background-color: white;
+  z-index: 9999;
+  border: solid 0.15em #282828;
+  background-color: #f5f5f5;
+}
+
+::selection {
+  background-color: #9599d679;
+}
+
+.modal-delete {
+  height: 10em;
+}
+
+.modal-rename {
+  height: 11em;
+}
+
+.modal-delete-title {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #282828;
+}
+
+.modal-delete-button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#ok-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 5em;
+  font-size: 1.2em;
+  background-color: #72e572;
+  color: white;
+  border-radius: 0.2em;
+}
+
+#ok-delete:hover {
+  background-color: #5ecf5e;
+}
+
+#cancel-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 5em;
+  font-size: 1.2em;
+  background-color: #e57272;
+  color: white;
+  border-radius: 0.2em;
+}
+
+#cancel-delete:hover {
+  background-color: #d35e5e;
+}
+
+.modal-rename-title {
+  text-align: center;
+  margin-bottom: 0;
+  color: #282828;
+}
+
+.modal-rename-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2em;
+}
+
+.modal-input-text {
+  font-size: 1em;
+  padding: 0;
+  text-align: center;
+  color: #282828;
+  background-color: #f5f5f5;
+  border-color: #dfdfdf59;
+  border: solid #a3a3a369;
+  outline: none;
+}
+
+#ok-rename {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  font-size: 1.2em;
+  background-color: #72e572;
+  color: white;
+  border-radius: 0.2em;
+}
+
+#ok-rename:hover {
+  background-color: #5ecf5e;
+}
+
+#cancel-rename {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 2em;
+  font-size: 1.2em;
+  background-color: #e57272;
+  color: white;
+  border-radius: 0.2em;
+}
+
+#cancel-rename:hover {
+  background-color: #d35e5e;
+}
