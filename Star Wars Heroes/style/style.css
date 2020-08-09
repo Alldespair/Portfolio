@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: starwars;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  color: rgba(255, 233, 31, 0.9);
+  font-size: 36px;
+  cursor: default;
+  overflow: hidden;
+}
+
+#startLogo {
+  display: flex;
+  background-image: url(../img/startLogo.jpg);
+  height: 100vh;
+  background-position: center;
+}
+
+#startHint {
+  width: 100vw;
+  display: inherit;
+  flex-direction: column-reverse;
+  margin-bottom: 5vh;
+  align-items: center;
+  font-size: 24px;
+}
+
+#container {
+  margin: 0 auto;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 5%;
+}
+
+#backBtn {
+  font-size: 24px;
+  width: 238px;
+  margin-right: 10px;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+#backBtn:hover {
+  background-color: rgba(177, 178, 185, 0.28);
+}
+
+#prevBtn {
+  visibility: hidden;
+  width: 238px;
+  margin-left: 10px;
+  border-radius: 8px;
+}
+
+#prevBtn:hover {
+  background-color: rgba(177, 178, 185, 0.28);
+}
+
+#nextBtn {
+  text-align: end;
+  width: 238px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+#nextBtn:hover {
+  background-color: rgba(177, 178, 185, 0.28);
+}
+
+#heroList {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 25%;
+  margin: 0 -5px;
+}
+
+.heroItemWrap {
+  width: 20%;
+  height: 250px;
+  padding: 5px;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.heroItem {
+  font-family: starwars;
+  border: solid rgba(255, 233, 31, 0.9) 5px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 230px;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(177, 178, 185, 0.28);
+}
+
+.heroItem:hover {
+  background-color: rgba(177, 178, 185, 0.48);
+}
+
+#heroInfoHidden {
+  display: none;
+}
+
+#heroInfoVisile {
+  display: flex;
+}
+
+#heroInfo {
+  display: none;
+}
+
+.tableItem {
+  color: rgb(215, 241, 208);
+}
+
+table {
+border-spacing: 0 10px;
+}
+
+th {
+padding: 10px 20px;
+background: #56433D;
+}
+
+th:first-child {
+text-align: left;
+letter-spacing: 5px;
+}
+
+th:last-child {
+border-right: none;
+}
+
+td {
+vertical-align: baseline;
+padding: 10px;
+font-size: 24px;
+line-height: 24px;
+border-top: 2px solid #56433D;
+border-bottom: 2px solid #56433D;
+border-right: 2px solid #56433D;
+background-color: rgba(86, 67, 61, 0.5);
+}
+
+td:first-child {
+border-left: 2px solid #56433D;
+border-right: none;
+}
+
+td:nth-child(2){
+text-align: left;
+}
+
+li {
+  list-style: none;
+}
