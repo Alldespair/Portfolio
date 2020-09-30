@@ -1,0 +1,61 @@
+.header
+  height: 150px
+  margin-bottom: 22px
+
+  @media screen and ( max-width: 1440px )
+    margin-bottom: 0
+
+  @media screen and ( max-width: 1024px )
+    height: 125px
+
+  @media screen and ( max-width: 991px )
+    padding: 0
+
+  .container-fluid
+    .navbar-brand
+      img
+        margin-top: 12px
+        margin-left: 64px
+
+        @media screen and ( max-width: 1440px )
+          margin-top: 0
+          margin-left: 34px
+
+        @media screen and ( max-width: 1024px )
+          margin-left: 20px
+
+    .navbar-toggler
+      margin-right: 25px
+
+  .navbar-collapse
+    flex-grow: 0
+
+    .navbar-nav
+      margin-right: 20px
+
+      @media screen and ( max-width: 1024px )
+        margin-right: 0
+
+      a
+        font-size: 28px
+        font-weight: 600
+        text-transform: uppercase
+        letter-spacing: -0.56px
+        margin-right: 55px
+        margin-top: 25px
+        color: #3D3D3D
+        &:hover
+          color: #FDD000
+          transition-duration: 0.2s
+
+        @media screen and ( max-width: 1440px )
+          margin-top: 0
+          margin-right: 25px
+
+        @media screen and ( max-width: 1024px )
+          margin-right: 0
+
+        @media screen and ( max-width: 991px )
+          text-align: right
+          background-color: #FFFFFF
+          padding-right: 25px
