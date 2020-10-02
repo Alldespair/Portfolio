@@ -1,0 +1,114 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #776e65;
+  background-color: #faf8ef;
+}
+
+.game {
+  width: min-content;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.header__info {
+  width: 100%;
+  display: flex;
+}
+
+.header__logo {
+  flex-grow: 1;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.score {
+  min-width: 70px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 20px;
+  color: white;
+  background: #bbada0;
+  padding: 5px 10px 10px;
+  border-radius: 3px;
+  margin-left: 5px;
+  box-sizing: border-box;
+}
+
+.score p {
+  width: 100%;
+  font-size: 13px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eee4da;
+  margin: 5px 0;
+}
+
+.newGameBTN {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f9f6f2;
+  background: #8f7a66;
+  padding: 8px 20px;
+  border-radius: 3px;
+  margin: 50px 0;
+  cursor: pointer;
+}
+
+.playground {
+  width: min-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #bbada0;
+  border: solid 10px #bbada0;
+  border-radius: 10px;
+  position: relative;
+}
+
+.gameRow {
+  display: flex;
+}
+
+.rowItem {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.gameOver {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(238, 228, 218, 0.73);
+  color: #776e65;
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 9999;
+  text-transform: uppercase;
+}
