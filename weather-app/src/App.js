@@ -2,7 +2,7 @@ import React from 'react';
 import { UserProvider } from './Context/UserContext';
 import SearchBar from './components/Search/SearchBar';
 import Main from './components/Main/Main';
-import './App.sass'
+import './App.sass';
 
 export default function App() {
   return (
@@ -15,4 +15,4 @@ export default function App() {
       </div>
     </UserProvider>
   );
-}
+};

@@ -1,9 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { UserContext } from '../../Context/UserContext';
-import dataConverter from '../../helpers/dataConverter'
-import './daily-weather.sass'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faWind, faWater, faFeatherAlt, faThermometerFull, faThermometerQuarter } from '@fortawesome/free-solid-svg-icons'
+import dataConverter from '../../helpers/dataConverter';
+import './daily-weather.sass';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWind, faWater, faThermometerQuarter } from '@fortawesome/free-solid-svg-icons';
 
 export default function DailyWeather() {
     const user = useContext(UserContext);
@@ -24,7 +24,7 @@ export default function DailyWeather() {
                 item.active = false
         ))
         setDailyArr(a)
-    }
+    };
 
     return (
         <div className='daily-info'>
@@ -35,7 +35,9 @@ export default function DailyWeather() {
                         <h2 className='daily-info__title'>{dataConverter(item.dt).day}</h2>
                         <div className='daily-info__more__main-info'>
                             <p className='daily-info__more__main-info__temp'>{Math.round(item.temp_max)}°</p>
-                            <img className='daily-info__more__main-info__weather-icon'
+                            <img
+                                className='daily-info__more__main-info__weather-icon'
+                                alt='weather icon'
                                 src={`http://openweathermap.org/img/wn/${item.icon}@4x.png`} />
                         </div>
                         <div className='daily-info__more__аdd-info'>
@@ -49,6 +51,7 @@ export default function DailyWeather() {
                         <p>{dataConverter(item.dt).day_min}</p>
                         <img
                             className='daily-info__less__weather-icon'
+                            alt='weather icon'
                             src={`http://openweathermap.org/img/wn/${item.icon}@2x.png`}
                         />
                         <p className='daily-info__less__weather-info'>{Math.round(item.temp_max)}°</p>

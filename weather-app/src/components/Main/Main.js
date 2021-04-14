@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import { UserContext } from '../../Context/UserContext';
 import CurrentWeather from '../Current/CurrentWeather';
 import DailyWeather from '../Daily/DailyWeather';
-import './main.sass'
-
+import './main.sass';
 
 export default function Main() {
     const user = useContext(UserContext);
-
     if (user.currentData && user.hourlyData && user.dailyData) {
         return (
             <div
@@ -15,7 +13,6 @@ export default function Main() {
                     <CurrentWeather />
                     <DailyWeather />
             </div>
-
         )
     }
     else return (

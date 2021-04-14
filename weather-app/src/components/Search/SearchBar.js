@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext, useCurrentLocation, geolocationOptions } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { UserContext } from '../../Context/UserContext';
 import axios from 'axios';
 import './search-bar.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationArrow, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export default function SearchBar() {
     const user = useContext(UserContext);

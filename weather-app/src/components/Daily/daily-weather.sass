@@ -2,7 +2,6 @@
 
 .daily-info
     display: flex
-
     .daily-info__more
         display: flex
         flex-direction: column
@@ -18,13 +17,13 @@
                 flex-direction: column
                 justify-content: center
                 align-items: center
-                width: 40%
-                font-size: 104px
+                width: 50%
+                font-size: 92px
+                font-weight: 300
                 .main-info__temp__item
                     border-bottom: 5px solid black
             .daily-info__more__main-info__weather-icon
-                min-width: 60%
-                object-fit: none
+                min-width: 50%
         .daily-info__more__аdd-info
             display: flex
             justify-content: space-between
@@ -32,6 +31,9 @@
         width: 10%
         text-align: center
         padding: 5px 5px 0
+        &:hover
+            background-color: $red
+            border-radius: 5px
         .daily-info__less__weather-icon
             width: 100%
         .daily-info__less__weather-info
