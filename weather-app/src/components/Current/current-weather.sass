@@ -1,0 +1,56 @@
+@import '../../helpers/project_variables'
+
+.current
+    padding-bottom: 25px
+    margin-bottom: 50px
+    border-bottom: 5px solid $white
+    .current-info
+        display: flex
+        flex-direction: row
+        .current-info__item
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            padding-left: 5px
+            .current__title
+                font-size: 20px
+            .current-info__item__main-info
+                display: flex
+                .current-info__item__main-info__temp
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 40%
+                    font-size: 104px
+                .current-info__item__main-info__weather-icon
+                    width: 60%
+                    object-fit: none
+            .current-info__item__аdd-info
+                display: flex
+                justify-content: space-between
+                font-size: 16px
+                .current-info__item__аdd-info__item
+
+        .hourly-items
+            width: 60%
+            display: flex
+            padding-top: 5px
+            .hourly-item
+                width: calc(100%/6)
+                text-align: center
+                padding: 0 5px
+                .hourly-item__data
+                .hourly-item__image
+                    width: 100%
+                .hourly-item__info
+                    font-size: 20px
+                    margin-bottom: 16px 
+                .hourly-item__wind
+                    font-size: 20px
+                .hourly-item__wind-title
+                    font-size: 12px
+                    margin: 5px 0
+                .hourly-item__wind-deg
+                    font-size: 20px
